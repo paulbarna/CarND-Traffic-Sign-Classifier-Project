@@ -91,7 +91,7 @@ My final model consisted of the following layers:
 
 
 
-The training epochs was originally set to 20 but I've noticed accuracy improvement if I increase the number of epochs (up to 50, although there is not much difference once 40 epochs are trained), without posing a risk of overfitting the model.
+The training epochs was originally set to 20 but I've noticed accuracy improvement if I increase the number of epochs, without posing a risk of overfitting the model (increased up to 50, although there is not much difference once 40 epochs are trained)
 Haven't changed the learning rate (0.001). 
 
 My final model results were:
