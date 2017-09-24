@@ -6,6 +6,17 @@
 
 ---
 
+[//]: # (Image References)
+
+[image0]: ./BarChart.png "Bar Chart"
+[image1]: ./Original.png "Original Set"
+[image2]: ./PreProcess.png "Grayscale & Normalization"
+[image3]: ./WebSigns/1.jpg "Speed limit (30km/h)"
+[image4]: ./WebSigns/11.jpg "Right-of-way at the next intersection"
+[image5]: ./WebSigns/12.jpg "Priority road"
+[image6]: ./WebSigns/17.png "No entry"
+[image7]: ./WebSigns/35.png "Ahead only"
+
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -45,7 +56,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-[image0]: ./BarChart.png
+![alt text][image0]
 
 ###Design and Test a Model Architecture
 
@@ -54,9 +65,8 @@ As a last step, I normalized the image data such as the input distributions have
 
 Traffic signs  before and after grayscaling & normalization
 
-[image1]: ./Original.png
-[image2]: ./PreProcess.png
-
+![alt text][image1]
+![alt text][image2]
 
 My final model consisted of the following layers:
 
@@ -99,11 +109,11 @@ Dropout layers helped reducing the amount of inputs for the following layers.
 
 Here are five German traffic signs that I found on the web:
 
-[image3]: ./WebSigns/1.jpg "Speed limit (30km/h)"
-[image4]: ./WebSigns/11.jpg "Right-of-way at the next intersection"
-[image5]: ./WebSigns/12.jpg "Priority road"
-[image6]: ./WebSigns/17.png "No entry"
-[image7]: ./WebSigns/35.png "Ahead only"
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
 
 No image should be difficult to classify because they are all very similar to those within the training dataset.  
 
