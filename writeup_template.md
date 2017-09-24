@@ -95,9 +95,9 @@ The training epochs was originally set to 20 but I've noticed accuracy improveme
 Haven't changed the learning rate (0.001).
 
 My final model results were:
-Validation Accuracy = 0.954
-Training Accuracy = 0.993
-Testing Accuracy = 0.935
+* Validation Accuracy = 0.954
+* Training Accuracy = 0.993
+* Testing Accuracy = 0.935
 
 LaNet architecture proved to be a good starting point as it provides accuracy up to 90%. However it didn't have the first 2 convolutional layers deep enough, 
 while the fully connected layers size were not wide enough as a consequence, which proved difficult to accommodate the new more detailed dataset with far more variety. 
