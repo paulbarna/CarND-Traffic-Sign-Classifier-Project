@@ -14,8 +14,9 @@
 [image3]: ./WebSigns/1.jpg "Speed limit (30km/h)"
 [image4]: ./WebSigns/11.jpg "Right-of-way at the next intersection"
 [image5]: ./WebSigns/12.jpg "Priority road"
-[image6]: ./WebSigns/17.png "No entry"
-[image7]: ./WebSigns/35.png "Ahead only"
+[image6]: ./WebSigns/17.jpg "No entry"
+[image7]: ./WebSigns/35.jpg "Ahead only"
+[image8]: ./Probabilities.png "Softmax Probabilities"
 
 **Build a Traffic Sign Recognition Project**
 
@@ -26,7 +27,6 @@ The goals / steps of this project are the following:
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
-
 
 
 ## Rubric Points
@@ -91,13 +91,13 @@ My final model consisted of the following layers:
 
 
 
-The training epochs was originally set to 20 but I've noticed accuracy improvement if I increase the number of epochs (40), without posing a risk of over-training the model.
+The training epochs was originally set to 20 but I've noticed accuracy improvement if I increase the number of epochs (50), without posing a risk of over-training the model.
 Haven't changed the learning rate (0.001).
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+Validation Accuracy = 0.954
+Training Accuracy = 0.993
+Testing Accuracy = 0.935
 
 LaNet architecture proved to be a good starting point as it provides accuracy up to 90%. However it didn't have the first 2 convolutional layers deep enough, 
 while the fully connected layers size were not wide enough as a consequence, which proved difficult to accommodate the new more detailed dataset with far more variety. 
@@ -119,50 +119,7 @@ No image should be difficult to classify because they are all very similar to th
 
 Here are the results of the prediction:
 
-WebSigns\1.jpg (Speed limit)
-
-Top five softmax probabilities:
-   1 - Speed limit (30km/h) : 100.0 %
-   2 - Speed limit (50km/h) : 0.0 %
-   4 - Speed limit (70km/h) : 0.0 %
-   0 - Speed limit (20km/h) : 0.0 %
-   21 - Double curve : 0.0 %
-
-WebSigns\11.jpg (Right-of-way at the next intersection)
-
-Top five softmax probabilities:
-   11 - Right-of-way at the next intersection : 100.0 %
-   30 - Beware of ice/snow : 0.0 %
-   21 - Double curve : 0.0 %
-   27 - Pedestrians : 0.0 %
-   40 - Roundabout mandatory : 0.0 %
-
-WebSigns\12.jpg (Priority road)
-
-Top five softmax probabilities:
-   12 - Priority road : 99.8 %
-   13 - Yield : 0.2 %
-   15 - No vehicles : 0.0 %
-   8 - Speed limit (120km/h) : 0.0 %
-   38 - Keep right : 0.0 %
-
-WebSigns\17.jpg (No entry)
-
-Top five softmax probabilities:
-   17 - No entry : 100.0 %
-   14 - Stop : 0.0 %
-   0 - Speed limit (20km/h) : 0.0 %
-   34 - Turn left ahead : 0.0 %
-   40 - Roundabout mandatory : 0.0 %
-
-WebSigns\35.jpg (Ahead only)
-
-Top five softmax probabilities:
-   35 - Ahead only : 100.0 %
-   33 - Turn right ahead : 0.0 %
-   13 - Yield : 0.0 %
-   36 - Go straight or right : 0.0 %
-   12 - Priority road : 0.0 %
+![alt text][image8]
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. Significantly better if compared to the original validation set, 
 but of course with less probability to fail considering there are only 5 images within the dataset.
